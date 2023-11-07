@@ -7,6 +7,8 @@ import logging
 import numpy as np
 
 from jass.agents.agent import Agent
+from jass.agents.agent_ex1 import AgentEx1
+from jass.agents.agent_minmax import AgentMinmax
 from jass.arena.arena import Arena
 from jass.agents.agent_random_schieber import AgentRandomSchieber
 from jass.game.const import color_masks, card_strings
@@ -51,7 +53,7 @@ def main():
 
     # setup the arena
     arena = Arena(nr_games_to_play=1000, save_filename='arena_games')
-    player = AgentRandomSchieber()
+    player = AgentMinmax()
     my_player = MyAgent()
 
     arena.set_players(my_player, player, my_player, player)

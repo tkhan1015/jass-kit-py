@@ -6,6 +6,7 @@
 import logging
 
 from jass.agents.agent_by_network import AgentByNetwork
+from jass.agents.agent_ex1 import AgentEx1
 from jass.arena.arena import Arena
 from jass.agents.agent_random_schieber import AgentRandomSchieber
 
@@ -16,7 +17,7 @@ def main():
 
     # setup the arena
     arena = Arena(nr_games_to_play=1)
-    player = AgentRandomSchieber()
+    player = AgentEx1()
     # my_player = AgentByNetwork('http://localhost:5000/random')
     my_player = AgentByNetwork('https://lg3bsb3a96.execute-api.eu-central-1.amazonaws.com/dev/random')
 

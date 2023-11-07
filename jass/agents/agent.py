@@ -18,6 +18,8 @@ class Agent:
         Returns:
             selected trump as encoded in jass.game.const or jass.game.const.PUSH
         """
+
+
         raise NotImplementedError
 
     def action_play_card(self, obs: GameObservation) -> int:
