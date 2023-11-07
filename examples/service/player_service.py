@@ -9,7 +9,7 @@ import logging
 import os
 import sys
 
-sys.path.append('..')
+sys.path.append("../jass/agents/")
 from jass.agents.agent_ex1 import AgentEx1
 from jass.service.player_service_app import PlayerServiceApp
 from jass.agents.agent_random_schieber import AgentRandomSchieber
