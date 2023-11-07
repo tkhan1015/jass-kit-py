@@ -6,7 +6,13 @@
 Example how to use flask to create a service for one or more players
 """
 import logging
+import os
+import sys
 
+
+script_dir = os.path.dirname(__file__)
+mymodule_dir = os.path.join(script_dir, '..', 'jass')
+sys.path.append(mymodule_dir)
 from jass.agents.agent_ex1 import AgentEx1
 from jass.service.player_service_app import PlayerServiceApp
 from jass.agents.agent_random_schieber import AgentRandomSchieber
