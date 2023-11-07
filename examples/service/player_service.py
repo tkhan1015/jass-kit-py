@@ -9,10 +9,7 @@ import logging
 import os
 import sys
 
-
-script_dir = os.path.dirname(__file__)
-mymodule_dir = os.path.join(script_dir, '..')
-sys.path.append(mymodule_dir)
+sys.path.append('..')
 from jass.agents.agent_ex1 import AgentEx1
 from jass.service.player_service_app import PlayerServiceApp
 from jass.agents.agent_random_schieber import AgentRandomSchieber
@@ -42,6 +39,5 @@ def create_app():
 
 
 if __name__ == '__main__':
-   app = create_app()
-   app.run()
-
+    app = create_app()
+    app.run()
