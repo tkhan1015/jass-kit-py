@@ -9,6 +9,8 @@ import logging
 import os
 import sys
 
+from agent_ex2 import AgentEx2
+
 sys.path.append("../jass/agents/")
 from jass.agents.agent_ex1 import AgentEx1
 from jass.service.player_service_app import PlayerServiceApp
@@ -33,7 +35,7 @@ def create_app():
     # app.config.from_pyfile('my_player_service.cfg', silent=False)
 
     # add some players
-    app.add_player('clover', AgentEx1())
+    app.add_player('clover', AgentEx2())
 
     return app
 
